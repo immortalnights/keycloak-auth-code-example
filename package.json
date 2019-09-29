@@ -1,0 +1,21 @@
+{
+  "name": "keycloakclienttest",
+  "version": "1.0.0",
+  "description": "",
+  "repository": "https://github.com/immortalnights/keycloak-auth-code-example.git",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crc": "^3.8.0",
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}

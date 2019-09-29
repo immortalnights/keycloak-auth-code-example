@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<script type="text/javascript" src="application.js"></script>
+		<script type="text/javascript" src="node_modules/moment/min/moment.min.js"></script>
+		<style type="text/css">
+			body {
+				height: 100%;
+				margin: 0;
+			}
+
+			.flex-container {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.flex-center {
+				align-items: center;
+			}
+
+			.flex-vcenter {
+				justify-content: center;
+			}
+
+			.flex-item {
+				flex: 1 auto;
+			}
+
+			section {
+				width: 90%;
+				height: 40%;
+				margin: 0 auto;
+			}
+
+			div.form-control {
+				width: auto;
+			}
+
+			label {
+				display: block;
+			}
+
+			h3 {
+				border-top: 1px solid lightgray;
+				padding-top: 5px;
+				margin-bottom: 0;
+			}
+
+			.scroll-container {
+				overflow-y: scroll;
+				border: 1px solid lightgray;
+			}
+
+			.scroll-container > p {
+				margin: 0;
+				font: .8em "system-ui", courier;
+			}
+
+			.scroll-container p:nth-child(even) {
+				background-color: #efefef;
+			}
+
+			.scroll-container > p.success {
+				background-color: #d1ffd1;
+			}
+
+			.scroll-container > p.warn {
+				background-color: #ffd1d1;
+			}
+
+			.scroll-container > p.error {
+				background-color: #ffd1d1;
+			}
+
+			span.datestamp {
+				padding: 0 2px;
+				margin: 0 1em 0 .2em;
+			}
+		</style>
+	</head>
+	<body class="flex-container flex-vcenter">
+		<!-- <form>
+			<div class="form-control">
+				<label for="clientid">Client</label>
+				<input id="clientid" name="clientid" value="default" placeholder="Enter client ID" autocomplete="off" />
+				<button type="submit">Create Client</button>
+			</div>
+		</form> -->
+		<section class="flex-container flex-center flex-vcenter" id="content"></section>
+
+
+		<section class="flex-container">
+			<h3>Logs</h3>
+			<div class="flex-item scroll-container" id="logcontent"></div>
+		</section>
+	</body>
+</html>
